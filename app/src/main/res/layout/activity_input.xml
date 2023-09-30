@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InputActivity">
+
+    <TextView
+        android:id="@+id/textViewPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите характеристики города:"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextClimate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Климат"
+        android:layout_below="@id/textViewPrompt"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextEconomy"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Экономика"
+        android:layout_below="@id/editTextClimate"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextArchitecture"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Архитектура"
+        android:layout_below="@id/editTextEconomy"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:layout_below="@id/editTextArchitecture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>
