@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E2E5FA"
     android:gravity="center"
     android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
-    android:id="@+id/textViewPrompt"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Готовы начать опрос?"
-    android:textSize="18sp"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"/>
+        android:id="@+id/textViewPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Готовы начать опрос?"
+        android:textSize="18sp" />
 
     <Button
-    android:id="@+id/buttonStart"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Начать"
-    android:layout_below="@id/textViewPrompt"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="16dp"/>
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/textViewPrompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:text="Начать" />
 </RelativeLayout>

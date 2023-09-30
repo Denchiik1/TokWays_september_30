@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Запуск InputActivity при нажатии кнопки "Начать"
                 Intent intent = new Intent(MainActivity.this, InputActivity.class);
                 startActivity(intent);
             }

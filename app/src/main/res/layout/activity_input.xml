@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E2E5FA"
     android:padding="16dp"
     tools:context=".InputActivity">
 
@@ -11,41 +12,43 @@
         android:id="@+id/textViewPrompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Введите характеристики города:"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"/>
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editTextClimate"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Климат"
+        android:layout_height="60dp"
         android:layout_below="@id/textViewPrompt"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="30dp"
+        android:hint="Климат" />
 
     <EditText
         android:id="@+id/editTextEconomy"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Экономика"
+        android:layout_height="60dp"
         android:layout_below="@id/editTextClimate"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="30dp"
+        android:hint="Экономика" />
 
     <EditText
         android:id="@+id/editTextArchitecture"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Архитектура"
+        android:layout_height="60dp"
         android:layout_below="@id/editTextEconomy"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="30dp"
+        android:hint="Архитектура" />
 
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Далее"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_below="@id/editTextArchitecture"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:text="Далее" />
 
 </RelativeLayout>
